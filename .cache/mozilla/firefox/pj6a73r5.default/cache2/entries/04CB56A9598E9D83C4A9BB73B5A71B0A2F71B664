@@ -1,0 +1,442 @@
+body { 
+      color:#333333; 
+      background-color:#ffffff; 
+      font-family:Helvetica, sans-serif; 
+      font-size:11pt; 
+      margin-left:30px;  }
+p { 
+   font-size:11pt; 
+   line-height:120%; 
+   margin-top:0; 
+   margin-bottom:5pt;  }
+LI.kadov-p { 
+            font-size:11pt; 
+            line-height:120%;  }
+p.Note { 
+        margin-top:0px; 
+        margin-left:25px; 
+        margin-bottom:10pt;  }
+LI.kadov-p-CNote {  }
+p.twoColumnListHead { 
+                     color:#000000; 
+                     padding:4px; 
+                     text-align:left; 
+                     width:auto; 
+                     margin-top:0px; 
+                     margin-bottom:0px; 
+                     margin-left:0px; 
+                     font-weight:bold;  }
+LI.kadov-p-CtwoColumnListHead { 
+                               color:#000000; 
+                               text-align:left; 
+                               font-weight:bold;  }
+p.pRelatedLink { 
+                margin-top:0px; 
+                margin-bottom:0px;  }
+LI.kadov-p-CpRelatedLink {  }
+table { 
+       margin-bottom:5pt; 
+       border-collapse:collapse; 
+       margin-top:0.3em; 
+       font-size:10pt;  }
+td { 
+    border:1px #BABABA solid; 
+    vertical-align:top; 
+    font-size:11pt; 
+    margin-bottom:0px; 
+    margin-top:0px; 
+    margin-left:0px; 
+    padding:5px; 
+    text-align:left; 
+    font-size:11pt; 
+    line-height:120%;  }
+P.TableCell { 
+             margin-top:0px; 
+             margin-left:0px; 
+             padding:5px; 
+             text-align:left; 
+             font-size:11pt; 
+             line-height:120%;  }
+td p { 
+      margin-top:0px; 
+      margin-left:0px; 
+      padding:5px; 
+      text-align:left; 
+      font-size:11pt; 
+      line-height:120%;  }
+LI.kadov-P-CTableCell { 
+                       text-align:left; 
+                       font-size:11pt; 
+                       line-height:120%;  }
+td LI.kadov-p { 
+               text-align:left; 
+               font-size:11pt; 
+               line-height:120%;  }
+tr { 
+    vertical-align:top;  }
+td.noBorder { 
+             border:0px none;  }
+th { 
+    padding:4px; 
+    text-align:left; 
+    background-color:#555555; 
+    font-weight:bold; 
+    margin-top:0; 
+    margin-bottom:0; 
+    color:#ffffff; 
+    font-size:11pt; 
+    border:1px #BABABA solid;  }
+th h3 { 
+       padding:4px; 
+       text-align:left; 
+       background-color:#555555; 
+       font-weight:bold; 
+       margin-top:0; 
+       margin-bottom:0; 
+       color:#ffffff; 
+       font-size:11pt; 
+       padding:0;  }
+th LI.kadov-h3 { 
+                text-align:left; 
+                font-weight:bold; 
+                color:#ffffff; 
+                font-size:11pt;  }
+th h3.TableHead { 
+                 padding:0;  }
+th LI.kadov-h3-CTableHead {  }
+H3.TableHead { 
+              padding:4px; 
+              text-align:left; 
+              background-color:#555555; 
+              font-weight:bold; 
+              margin-top:0; 
+              margin-bottom:0; 
+              color:#ffffff; 
+              font-size:11pt;  }
+LI.kadov-H3-CTableHead { 
+                        text-align:left; 
+                        font-weight:bold; 
+                        color:#ffffff; 
+                        font-size:11pt;  }
+h1 { 
+    color:#0860A8; 
+    font-size:15pt; 
+    padding-bottom:1px; 
+    margin-left:0pt; 
+    margin-bottom:0; 
+    border-bottom:1px solid #0860A8; 
+    font-weight:normal;  }
+LI.kadov-h1 { 
+             color:#0860A8; 
+             font-size:15pt; 
+             font-weight:normal;  }
+h1.title { 
+          border-bottom:0 none; 
+          margin-left:0px; 
+          font-weight:normal;  }
+LI.kadov-h1-Ctitle { 
+                    font-weight:normal;  }
+h2 { 
+    color:#0860A8; 
+    font-weight:lighter; 
+    margin-top:5pt; 
+    margin-bottom:0; 
+    font-size:13pt;  }
+LI.kadov-h2 { 
+             color:#0860A8; 
+             font-weight:lighter; 
+             font-size:13pt;  }
+h3 { 
+    color:#333333; 
+    font-weight:bold; 
+    background-color:#ffffff; 
+    margin-top:5pt; 
+    margin-bottom:0; 
+    font-size:11pt;  }
+LI.kadov-h3 { 
+             color:#333333; 
+             font-weight:bold; 
+             font-size:11pt;  }
+h3.NoteTipHead { 
+                color:#006699; 
+                margin-top:11pt; 
+                padding-bottom:0; 
+                line-height:18px; 
+                text-transform:uppercase;  }
+LI.kadov-h3-CNoteTipHead { 
+                          color:#006699; 
+                          line-height:18px; 
+                          text-transform:uppercase;  }
+h3.NoteTipHead img { 
+                    vertical-align:middle;  }
+ul { 
+    margin-bottom:1em; 
+    font-size:11pt; 
+    margin-top:0px;  }
+ul ol { 
+       margin-bottom:0em; 
+       font-size:11pt; 
+       list-style-type:decimal;  }
+ul ul { 
+       margin-bottom:0px; 
+       font-size:11pt;  }
+ul.Note { 
+         margin-left:25px;  }
+td ul { 
+       font-size:11pt;  }
+ol { 
+    margin-bottom:1em; 
+    font-size:11pt; 
+    margin-top:0px; 
+    list-style-type:decimal;  }
+ol ol { 
+       list-style:lower-alpha; 
+       margin-bottom:0em; 
+       font-size:11pt;  }
+ol.Note { 
+         margin-left:25px;  }
+td ol { 
+       font-size:11pt;  }
+ol ul { 
+       margin-bottom:0px; 
+       font-size:11pt;  }
+li { 
+    font-size:11pt; 
+    margin-top:0px; 
+    line-height:120%;  }
+li p { 
+      margin-bottom:0.2em; 
+      margin-top:0.2em; 
+      margin-left:0px; 
+      padding-left:0px; 
+      font-size:11pt;  }
+ol p { 
+      margin-bottom:0.2em; 
+      margin-top:0.2em; 
+      margin-left:0px; 
+      padding-left:0px; 
+      font-size:11pt;  }
+ul p { 
+      margin-bottom:0.2em; 
+      margin-top:0.2em; 
+      margin-left:0px; 
+      padding-left:0px; 
+      font-size:11pt;  }
+li LI.kadov-p { 
+               font-size:11pt;  }
+ol LI.kadov-p { 
+               font-size:11pt;  }
+ul LI.kadov-p { 
+               font-size:11pt;  }
+li table { 
+          margin-left:0px;  }
+td table { 
+          margin-left:0px;  }
+dd table { 
+          margin-left:0px;  }
+indent li p { 
+             margin-bottom:0.2em; 
+             margin-top:0.2em; 
+             margin-left:-2em;  }
+indent li LI.kadov-p {  }
+P.Preformatted { 
+                line-height:90%; 
+                x-text-tab-stops:repeat 1in; 
+                margin-top:0px; 
+                margin-bottom:0px; 
+                font-size:10pt; 
+                font-family:Courier, monospace; 
+                background-color:#EEEEEE;  }
+LI.kadov-P-CPreformatted { 
+                          line-height:90%; 
+                          x-text-tab-stops:repeat 1in; 
+                          font-size:10pt; 
+                          font-family:Courier, monospace;  }
+td P.Preformatted { 
+                   line-height:90%; 
+                   x-text-tab-stops:repeat 1in; 
+                   margin-top:0px; 
+                   margin-bottom:0px; 
+                   margin-left:0px; 
+                   font-size:10pt; 
+                   font-family:Courier, monospace; 
+                   background-color:#EEEEEE;  }
+td LI.kadov-P-CPreformatted { 
+                             line-height:90%; 
+                             x-text-tab-stops:repeat 1in; 
+                             font-size:10pt; 
+                             font-family:Courier, monospace;  }
+SPAN.Code { 
+           font-family:Courier, monospace;  }
+.Code { 
+       font-family:Courier, monospace;  }
+LI.kadov-CCode { 
+                font-family:Courier, monospace;  }
+blockquote { 
+            margin-top:0px; 
+            margin-bottom:0px;  }
+HR { 
+    color:#555555; 
+    border:0px; 
+    background:#555555; 
+    height:1px; 
+    margin-left:0px;  }
+SPAN.Big { 
+          font-weight:bold; 
+          font-size:105%;  }
+.welcomeImg { 
+             padding-left:0px; 
+             padding-bottom:0px;  }
+LI.kadov-CwelcomeImg {  }
+.IntelExt { 
+           color:#008080;  }
+LI.kadov-CIntelExt { 
+                    color:#008080;  }
+dl { 
+    margin-bottom:1em; 
+    font-size:11pt; 
+    margin-top:0px; 
+    line-height:150%;  }
+dt { 
+    font-weight:bold; 
+    margin-top:1em;  }
+dd { 
+    font-size:11pt; 
+    margin-left:0px;  }
+dd p { 
+      margin-bottom:0.2em; 
+      margin-top:0.2em; 
+      font-size:11pt;  }
+dd LI.kadov-p { 
+               font-size:11pt;  }
+.link\005fbuttons { 
+                   background-color:#EEEEEE; 
+                   border-color:#EEEEEE; 
+                   border-width:1px; 
+                   padding:4px;  }
+LI.kadov-Clink\005fbuttons {  }
+a:link { 
+        color:#0860A8; 
+        x-text-underline:off; 
+        x-text-overline:off; 
+        x-text-line-through:off; 
+        text-decoration:none none none;  }
+a:visited { 
+           color:#0860A8; 
+           x-text-underline:off; 
+           x-text-overline:off; 
+           x-text-line-through:off; 
+           text-decoration:none none none;  }
+a:active { 
+          color:#0860A8; 
+          x-text-underline:normal; 
+          text-decoration:underline;  }
+a:hover { 
+         color:#0860A8; 
+         x-text-underline:normal; 
+         text-decoration:underline;  }
+h1.reviewA { 
+            color:#ff0000;  }
+LI.kadov-h1-CreviewA { 
+                      color:#ff0000;  }
+h2.reviewA { 
+            color:#ff0000;  }
+LI.kadov-h2-CreviewA { 
+                      color:#ff0000;  }
+h3.reviewA { 
+            color:#ff0000;  }
+LI.kadov-h3-CreviewA { 
+                      color:#ff0000;  }
+p.reviewA { 
+           color:#ff0000;  }
+td.reviewA { 
+            color:#ff0000;  }
+th.reviewA { 
+            color:#ff0000;  }
+tr.reviewA { 
+            color:#ff0000;  }
+table.reviewA { 
+               color:#ff0000;  }
+ul.reviewA { 
+            color:#ff0000;  }
+ol.reviewA { 
+            color:#ff0000;  }
+li.reviewA { 
+            color:#ff0000;  }
+LI.kadov-p-CreviewA { 
+                     color:#ff0000;  }
+SPAN.reviewA { 
+              color:#ff0000;  }
+h1.reviewB { 
+            color:#ff0000;  }
+LI.kadov-h1-CreviewB { 
+                      color:#ff0000;  }
+h2.reviewB { 
+            color:#ff0000;  }
+LI.kadov-h2-CreviewB { 
+                      color:#ff0000;  }
+h3.reviewB { 
+            color:#ff0000;  }
+LI.kadov-h3-CreviewB { 
+                      color:#ff0000;  }
+p.reviewB { 
+           color:#ff0000;  }
+td.reviewB { 
+            color:#ff0000;  }
+th.reviewB { 
+            color:#ff0000;  }
+tr.reviewB { 
+            color:#ff0000;  }
+table.reviewB { 
+               color:#ff0000;  }
+ul.reviewB { 
+            color:#ff0000;  }
+ol.reviewB { 
+            color:#ff0000;  }
+li.reviewB { 
+            color:#ff0000;  }
+LI.kadov-p-CreviewB { 
+                     color:#ff0000;  }
+SPAN.reviewB { 
+              color:#ff0000;  }
+h1.reviewC { 
+            color:#ff0000;  }
+LI.kadov-h1-CreviewC { 
+                      color:#ff0000;  }
+h2.reviewC { 
+            color:#ff0000;  }
+LI.kadov-h2-CreviewC { 
+                      color:#ff0000;  }
+h3.reviewC { 
+            color:#ff0000;  }
+LI.kadov-h3-CreviewC { 
+                      color:#ff0000;  }
+p.reviewC { 
+           color:#ff0000;  }
+td.reviewC { 
+            color:#ff0000;  }
+th.reviewC { 
+            color:#ff0000;  }
+tr.reviewC { 
+            color:#ff0000;  }
+table.reviewC { 
+               color:#ff0000;  }
+ul.reviewC { 
+            color:#ff0000;  }
+ol.reviewC { 
+            color:#ff0000;  }
+li.reviewC { 
+            color:#ff0000;  }
+LI.kadov-p-CreviewC { 
+                     color:#ff0000;  }
+SPAN.reviewC { 
+              color:#ff0000;  }
+^H’¼ns      W$fçW$fé<g„X¶ò³   l:http://www.jaist.ac.jp/iscenter-new/mpc/altix/altixdata/opt/intel/vtune/doc/users_guide/styles/styles_l.css necko:classified 1 request-method GET response-head HTTP/1.1 200 OK
+Date: Sat, 30 Apr 2016 16:04:13 GMT
+Server: Apache
+Last-Modified: Fri, 21 Dec 2007 06:47:24 GMT
+Etag: "463fe-2e80-441c6403e5700"
+Accept-Ranges: bytes
+Content-Length: 11904
+Content-Type: text/css
+ uncompressed-len 0   .€

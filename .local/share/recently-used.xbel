@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbel version="1.0"
+      xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
+      xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
+>
+  <bookmark href="file:///home/luigi/Downloads/Makefile" added="2016-04-21T07:02:45Z" modified="2016-04-27T08:35:41Z" visited="2016-04-21T07:02:47Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-makefile"/>
+        <bookmark:groups>
+          <bookmark:group>geany</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2016-04-21T07:02:45Z" count="1"/>
+          <bookmark:application name="nautilus" exec="&apos;geany %F&apos;" modified="2016-04-27T08:35:41Z" count="2"/>
+          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2016-04-21T07:03:12Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/luigi/Downloads/quiz.asm" added="2016-04-21T07:02:46Z" modified="2016-04-23T22:52:06Z" visited="2016-04-21T07:02:47Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:groups>
+          <bookmark:group>geany</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2016-04-21T07:02:46Z" count="1"/>
+          <bookmark:application name="nautilus" exec="&apos;geany %F&apos;" modified="2016-04-21T07:03:12Z" count="1"/>
+          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2016-04-23T22:52:06Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/luigi/Desktop/Arreglo/makefile" added="2016-04-21T23:14:17Z" modified="2016-04-21T23:14:17Z" visited="2016-04-21T23:14:17Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-makefile"/>
+        <bookmark:groups>
+          <bookmark:group>geany</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2016-04-21T23:14:17Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/luigi/Desktop/Arreglo/arreglo.asm" added="2016-04-21T23:15:23Z" modified="2016-04-26T13:24:40Z" visited="2016-04-21T23:15:24Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>geany</bookmark:group>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2016-04-26T13:24:40Z" count="4"/>
+          <bookmark:application name="nautilus" exec="&apos;geany %F&apos;" modified="2016-04-26T03:46:31Z" count="2"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2016-04-23T15:14:40Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/luigi/Downloads/h.asm" added="2016-04-23T22:54:15Z" modified="2016-04-30T22:27:55Z" visited="2016-04-23T22:54:16Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:groups>
+          <bookmark:group>geany</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2016-04-30T22:27:55Z" count="7"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/luigi/Downloads/divisiones.asm" added="2016-04-23T23:37:45Z" modified="2016-04-23T23:38:10Z" visited="2016-04-23T23:37:45Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:groups>
+          <bookmark:group>geany</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2016-04-23T23:37:45Z" count="1"/>
+          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2016-04-23T23:38:10Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/luigi/Desktop/arreglito/divisiones.asm" added="2016-04-26T14:00:27Z" modified="2016-04-26T14:00:27Z" visited="2016-04-26T14:00:27Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:groups>
+          <bookmark:group>geany</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2016-04-26T14:00:27Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/luigi/Desktop/arreglito/Makefile" added="2016-04-30T06:28:45Z" modified="2016-05-01T07:06:04Z" visited="2016-04-30T06:28:45Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-makefile"/>
+        <bookmark:groups>
+          <bookmark:group>geany</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2016-05-01T07:06:04Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/luigi/Desktop/arreglito/h.asm" added="2016-04-30T06:38:36Z" modified="2016-05-04T00:00:11Z" visited="2016-04-30T06:38:37Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:groups>
+          <bookmark:group>geany</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2016-05-04T00:00:11Z" count="6"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/luigi/Desktop/arreglito/f.asm" added="2016-04-30T23:10:23Z" modified="2016-04-30T23:10:23Z" visited="2016-04-30T23:10:23Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>geany</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2016-04-30T23:10:23Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/luigi/Desktop/arreglito/puntos.asm" added="2016-05-01T07:08:53Z" modified="2016-05-01T07:08:53Z" visited="2016-05-01T07:08:53Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>geany</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2016-05-01T07:08:53Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/luigi/leeme.md" added="2016-05-04T01:01:55Z" modified="2016-05-04T01:02:26Z" visited="2016-05-04T01:01:55Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-markdown"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2016-05-04T01:02:26Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+</xbel>

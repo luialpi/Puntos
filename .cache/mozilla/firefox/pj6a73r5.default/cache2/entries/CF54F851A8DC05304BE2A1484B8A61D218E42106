@@ -1,0 +1,598 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #003366;
+  color: white;
+  font-family: small Arial, Helvetica, Verdana, sans-serif;
+}
+h1 {
+color:#050845;
+font-family: "Trebuchet MS", Arial, Helvetica;
+font-size: 180%;
+}
+#wrapper {
+  background-color: #fdf8f2;
+  color: black;
+  margin: 30px 40px 30px 40px;
+  padding: 10px;
+}
+#tagright {
+  border-top: 1px solid #b9d2e3;
+  border-bottom: 1px solid #b9d2e3;
+  height: 1%;
+}
+#tagright ul {
+  margin: 0;
+  padding: 0;
+  padding: 0 30px 0 0;
+  text-align: right;
+  font-size: 90%;
+  font-weight: 300;
+}
+#tagright li {
+  display: inline;
+  background-color: #fdf8f2;
+  color: #050845;
+  padding-right: 25px;
+}
+#tagright a:link, #tagright a:visited {
+  text-decoration: none;
+  background-color: #fdf8f2;
+  color: #050845;
+  font-weight: 300;
+}
+#tagline {
+  font-weight: bold;
+  background-color: #fdf8f2;
+  color: #050845;
+  font-style: italic;
+  font-size: 90%;
+  margin: 0;
+  padding: 0 0 0 10px;
+  width: 300px;
+  float: left;
+}
+#soon {
+position: absolute;
+top: 70px;
+right: 220px;
+font-size: 85%;
+}
+#flag1 {
+	position: absolute;
+	border-style: none;
+  	top: 110px;
+	right: 263px;
+}
+#flag2 {
+	position: absolute;
+	border-style: none;
+  	top: 110px;
+ 	right: 158px;
+}
+#penguin {
+  position: absolute;
+  top: 96px;
+  right: 50px;
+  border-style: none;
+}
+#gnome {
+margin-left: 5px;
+margin-bottom: 30px;
+border-style: none;
+}
+#main {
+  width: 100%;
+  margin-top: 10px;
+  background-image: url(Images/rcolbg.gif);
+  background-position: top right;
+  background-repeat: repeat-y;
+}
+#content {
+  margin: 0 240px 0 160px;
+  border-top: 1px solid #b9d2e3;
+  border-right: 1px solid #b9d2e3;
+  border-left: 1px solid #b9d2e3;
+  background-color: white;
+  color: black;
+}
+#content .contenttitle {
+  background-color: #112236;
+  color: white;
+  padding: 2em 2em 2em 10px;
+  height: 0.5%;
+}
+#content .contenttitle h2 {
+  margin: 0;
+  font-weight: normal;
+  font-size: 130%;
+}
+
+#content .inner {
+  margin: 10px 20px 10px 40px;
+}
+#content .inner h2 {
+  color: #245185;
+  padding-bottom: 0.2em;
+  border-bottom: 1px solid #b9d2e3;
+  font-size: 100%;
+}
+#content .inner ul.features {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#content .inner h3 {
+  color: #245185;
+  padding-bottom: 0.1em;
+  font-size: 95%;
+}
+#content .inner h4 {
+  color: #245185;
+  padding-bottom: 0.1em;
+  font-size: 90%;
+}
+
+#content .inner h3 a:link, #content .inner h3 a:visited {
+  color: #245185;
+}
+#content .inner a:link, #content .inner a:visited {
+text-decoration: none;
+  color: #245185;
+}
+#content .inner p {
+  color: #2E2E2E;
+  font-size: 90%;
+  text-align: justify;
+  line-height: 1.2;
+}
+
+#content .inner li {
+  color: #2E2E2E;
+  font-size: 90%;
+  text-align: justify;
+  line-height: 1.1em;
+  padding-top: 0.5em;
+}
+
+#rightcol {
+  float: right;
+  width: 220px;
+  background-color: #256289;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+#rightcol h3 {
+  font-size: 95%;
+  background-image: url(Images/titler.jpg);
+  background-repeat: no-repeat;
+  margin: 0 0 1em 0;
+  padding: 0.2em 0 0.2em 10px;
+  font-weight: normal;
+}
+#rightcol .inner {
+  padding: 10px;
+  margin-top:2em;
+}
+#rightcol .inner2 {
+	padding: 10px;
+	margin-top: 2em;
+}
+#rightcol .inner3 {
+	padding: 10px;
+	margin-top: 1em;
+}
+#rightcol .inner3 .anunciosG {
+	padding: 10px;
+	margin-top: 0.5em;
+	margin-left: 0.8em;
+}
+
+#rightcol p {
+  font-size: 80%;
+  line-height: 1.4em;
+}
+#rightcol a:link, #rightcol a:visited {
+	text-decoration: none;
+	color: #EFD4A5;
+}
+
+#searchform .text {
+  width: 196px;
+  border: 1px solid #45bac0;
+}
+#searchform .searchbutton {
+  text-align: right;
+  margin-top: 4px;
+}
+#searchform .btn {
+  border: 1px solid #45bac0;
+  background-color: #256290;
+  color: white;
+}
+
+#leftcol {
+  float: left;
+  width: 159px;
+  border-top: 1px solid #b9d2e3;
+  border-left: 1px solid #b9d2e3;
+  background-color: white;
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+#leftcol .inner {
+  margin:  10px;
+}
+#leftcol p {
+  font-size: 85%;
+  color: #666666;
+  text-align: justify;
+}
+#leftcol a:link, #sidebar2 a:visited {
+  color: #245185;
+  font-weight: bold;
+  font-size: 85%;
+}
+#leftcol h3 {
+  color: #245185;
+  padding-top: 2em;
+  padding-bottom: 0.2em;
+  border-bottom: 1px solid #b9d2e3;
+  font-size: 85%;
+}
+#leftcol .inner .nav {
+margin-top: 10px;
+}
+#leftcol .inner .nav {
+  list-style: none;
+  margin: 0;
+  padding:  0;
+}
+#leftcol .inner .nav li {
+  border-bottom: 1px solid #b9d2e3;
+  padding: 0.4em 0 0.2em 0;
+  font-size:  90%;
+}
+#leftcol .inner .nav li a:link {
+  text-decoration: none;
+  color: #245185;
+  font-weight: normal;
+  font-size: 85%;
+}
+#leftcol .inner .nav li a:visited {
+  text-decoration: none;
+  color: #245185;
+  font-weight: normal;
+  font-size: 85%;
+}
+
+#leftcol .inner .nav .intern {
+margin-left: 12px;
+}
+
+#footer {
+  width: 100%;
+  border-top: 1px solid #b9d2e3;
+  border-bottom: 1px solid #b9d2e3;
+  margin-top: 10px;
+  clear: both;
+}
+#footer p {
+  font-size: 75%;
+  color: #333333;
+  margin: 0;
+  padding: 0.2em 0 0.2em 0;
+}
+#foot {
+list-style: none;
+font-size: 75%;
+color: #333333;
+margin-left: 0;
+padding-left: 0;
+margin-top: 0.4em;
+margin-bottom: 0.3em;
+}
+
+#foot li {
+  display: inline;
+	color: #333333;
+  	padding: 0.2em 0.5em 0.2em 1em;
+  }
+#foot li a:link, #foot li a:visited {
+	text-decoration: none;
+	color: #292C89;											
+}
+#clearone {
+  clear: both;
+  height: 1px;
+}
+#main2 {
+  margin-top: 10px;
+  background-image: url(Images/leftb.gif);
+  background-position: bottom left;
+  background-repeat: repeat-y;
+}
+
+table.general {
+	border-collapse: collapse;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+}
+table.general th, table.general td {
+	font-family: Bookman, Times;
+	padding: 4px;
+	border: 1px solid #0952A6;
+	}
+table.general th {
+	font-size: 95%;
+	font-weight: bold;
+	background-color: #A1B9CC;
+}
+table.general td {
+	font-size: 90%;
+}
+table.gencentral {
+	border-collapse: collapse;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+table.gencentral th, table.gencentral td {
+	font-family: Bookman, Times;
+	padding: 4px;
+	border: 1px solid #0952A6;
+	}
+table.gencentral th {
+	font-size: 95%;
+	font-weight: bold;
+	background-color: #A1B9CC;
+}
+table.gencentral td {
+	font-size: 90%;
+}
+table.memory {
+	border-collapse: collapse;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+table.memory th, table.memory td {
+	padding: 4px;
+	border: 1px solid #0952A6;
+	}
+table.memory th {
+	font-size: 95%;
+	font-weight: bold;
+	background-color: #848484;
+}
+table.memory td {
+	font-size: 90%;
+}
+table.adcode {
+	border-collapse: collapse;
+	border: 1.5px solid #666666;
+	text-align: left;
+}
+table.adcode th, table.adcode td {
+	font-family: Bookman, Times;
+	padding: 4px;
+	}
+table.adcode th {
+	font-size: 95%;
+	font-weight: normal;
+	background-color: #E6E6E6;
+}
+table.adcode td {
+	font-size: 95%;
+	padding-left: 3em;
+	background-color: #E6E6E6;
+	border: 1px solid #E6E6E6;
+}
+table.adcode2 {
+	border-collapse: collapse;
+	border: none;
+	text-align: left;
+}
+table.adcode2 th, table.adcode2 td {
+	font-family: Bookman, Times;
+	padding: 4px;
+	}
+table.adcode2 col.lef {
+background-color: #FFFFFF;
+}
+table.adcode2 col.rig {
+background-color: #E3F6CE;
+}
+table.adcode2 td {
+	font-size: 95%;
+	padding-left: 1em;
+}
+#content .lastlink a:link, a:visited {
+ text-decoration: none;
+}
+#next {
+font-size: 95%;
+text-align: center;
+padding-left: 22em;
+}
+#next a:link, a:visited {
+text-decoration: none;
+color: #336600;
+}
+#arrowr {
+border: none;
+margin-left: 1em;
+}
+table.regsize {
+	border-collapse: collapse;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+table.regsize td {
+	padding: 4px;
+	}
+table.regsize th {
+	font-size: 90%;
+	font-weight: bold;
+	background-color: #A1B9CC;
+}
+table.regsize td {
+	font-size: 80%;
+}
+#fig1 {
+	margin-left: 20px;
+}
+#fig2 {
+	margin-left: 20px;
+}
+#fig3 {
+	margin-left: 20px;
+}
+#content .nota {
+	border: 1.5px solid #005B9A;
+	padding: 0.5em;
+}
+#content .idunder {
+	margin-top: -1.5em;
+	margin-left: 10em;
+	font-family: Bookman, Times;
+	font-size: 85%;
+}
+#mybutton {
+	background-color: #D8D8D8;
+	float: right;
+	margin-top: 0.5em;
+}
+#shop {
+	background-color: #FFFFFF;
+	border: none;
+}
+
+#inner2 .shoplink {
+	text-align: center;
+}
+#content .extra {
+	color: #660066;
+}
+#content .progrmc {
+	color: #003;
+	font-size: 85%;
+	padding-left: 4em;
+	line-height: 0.2;
+}
+#content .space {
+	padding-left: 2em;
+}
+#content .space2 {
+	padding-left: 4em;
+}
+#content .monitor {
+background-color: #E3F6CE;
+color: #000000;
+}
+#content .monitor p {
+color: #000000;
+font-family: Bookman, Times;
+margin: 0;
+}
+#content .base {
+	background-color: #D4DFEA;
+}
+table.assem {
+	border-collapse: collapse;
+	text-align: left;
+	background-color: #D4DFEA;
+
+}
+table.assem th, table.assem td {
+	font-family: Bookman, Times;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	padding-left: 6px;
+	padding-right: 6px;
+	}
+table.assem td {
+	font-size: 95%;
+}
+table.pila {
+	border-collapse: collapse;
+	border: 0.5px solid #424242;
+	text-align: left;
+
+}
+table.pila th {
+	border: 0.5px solid #424242;
+	font-family: Bookman, Times;
+	font-weight: normal;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	padding-left: 6px;
+	padding-right: 6px;
+	background-color: #F8E0F7;
+	text-align: center;
+	}
+table.pila td {
+	border: 0.5px solid #424242;
+    font-family: Bookman, Times;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	padding-left: 6px;
+	padding-right: 6px;
+	font-size: 95%;
+	text-align: center;
+}
+#content .grey {
+color: #666666;
+}
+#smallwind {
+	background-color: #A9D0F5;
+	margin: 0.5em;
+	padding-left: 1.5em;
+}
+#smallwind h2 {
+padding-top: 1em;
+	font-size: 80%;
+	color: #1C1C1C;
+}
+#smallwind h4 {
+	font-size: 75%;
+	color: #1C1C1C;
+}
+#smallwind p {
+	font-size: 80%;
+	color: #1C1C1C;
+}
+#content .blue {
+color: #245185;
+}
+#W3 {
+	border-style: none;
+}
+#CSS {
+	border-style: none;
+}
+#leftcol .inner4 {
+	padding-left: 1em;
+	margin-top: 2em;
+}
+#img {
+	border-style: none;
+}
+#img2 {
+	border-style: none;
+}‚Ï¬c…      WdˆWd‰<__øWvI   %:http://learnassembler.com/style2.css necko:classified 1 request-method GET response-head HTTP/1.1 200 OK
+Date: Thu, 21 Apr 2016 23:38:48 GMT
+Content-Type: text/css
+Content-Length: 9819
+Server: Apache/2
+Last-Modified: Tue, 30 Sep 2008 12:00:28 GMT
+Etag: "265b-4581bbac9ef00"
+Cache-Control: max-age=14400
+Expires: Fri, 22 Apr 2016 00:54:32 GMT
+Accept-Ranges: bytes
+Age: 9855
+ uncompressed-len 0   &[

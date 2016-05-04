@@ -1,0 +1,18 @@
+logrotate state -- version 2
+"/home/luigi/.cache/upstart/gnome-keyring-ssh.log" 2016-5-3-13:13:13
+"/home/luigi/.cache/upstart/unity-settings-daemon.log" 2016-5-3-13:13:13
+"/home/luigi/.cache/upstart/unity-panel-service.log" 2016-5-3-13:13:13
+"/home/luigi/.cache/upstart/dbus.log" 2016-5-3-13:13:13
+"/home/luigi/.cache/upstart/im-config.log" 2016-5-3-13:13:13
+"/home/luigi/.cache/upstart/unity7.log" 2016-5-3-13:13:13
+"/home/luigi/.cache/upstart/gnome-session-Unity.log" 2016-5-3-13:13:13
+"/home/luigi/.cache/upstart/window-stack-bridge.log" 2016-5-3-13:13:13
+"/home/luigi/.cache/upstart/update-notifier-crash-_var_crash__usr_bin_webapp-container.1000.crash.log" 2016-4-25-18:17:34
+"/home/luigi/.cache/upstart/indicator-power.log" 2016-5-3-13:13:13
+"/home/luigi/.cache/upstart/gnome-keyring-gpg.log" 2016-5-3-13:13:13
+"/home/luigi/.cache/upstart/indicator-sound.log" 2016-5-3-13:13:13
+"/home/luigi/.cache/upstart/indicator-printers.log" 2016-4-30-14:26:45
+"/home/luigi/.cache/upstart/*.log" 2016-4-29-6:0:0
+"/home/luigi/.cache/upstart/update-notifier-release.log" 2016-5-3-13:13:13
+"/home/luigi/.cache/upstart/ssh-agent.log" 2016-5-3-13:13:13
+"/home/luigi/.cache/upstart/indicator-bluetooth.log" 2016-5-3-7:10:32

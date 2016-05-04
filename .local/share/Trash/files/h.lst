@@ -1,0 +1,63 @@
+     1                                  section .data
+     2 00000000 03                      	x db 3
+     3 00000001 01                      	y db 1
+     4                                  	
+     5 00000002 01000000                	uno dd 1
+     6 00000006 02000000                	dos dd 2
+     7 0000000A 0F000000                	quince dd 15
+     8                                  	
+     9 0000000E 00000000                	arreglo dd 000
+    10                                  	
+    11                                  	
+    12                                  section .bss
+    13 00000000 <res 00000004>          	res resb 4
+    14 00000004 <res 00000004>          	res1 resb 4
+    15 00000008 <res 00000004>          	noSirve resb 4
+    16                                  	
+    17                                  section .text
+    18                                  	global _start
+    19                                  	
+    20                                  	_start
+    21                                  	
+    22 00000000 DB05[02000000]          	fild dword[uno]
+    23 00000006 DB05[06000000]          	fild dword[dos]
+    24                                  	
+    25 0000000C D8C9                    	fmul st1
+    26                                  	
+    27 0000000E DB1D[04000000]          	fistp dword[res1]
+    28 00000014 DB1D[08000000]          	fistp dword[noSirve]
+    29 0000001A DB05[0A000000]          	fild dword[quince]
+    30 00000020 DB05[06000000]          	fild dword[dos]
+    31 00000026 D8C9                    	fmul st1
+    32                                  	
+    33 00000028 DB1D[00000000]          	fistp dword[res]
+    34 0000002E DB1D[08000000]          	fistp dword[noSirve]
+    35 00000034 A0[00000000]            	mov al,[res]
+    36 00000039 A2[0E000000]            	mov [arreglo],al
+    37 0000003E DB05[0E000000]          	fild dword[arreglo]
+    38 00000044 A0[04000000]            	mov al,[res1]
+    39 00000049 A2[0E000000]            	mov [arreglo],al
+    40 0000004E DB05[0E000000]          	fild dword[arreglo]
+    41 00000054 D8C1                    	fadd st0, st1
+    42 00000056 DB1D[00000000]          	fistp dword[res]
+    43 0000005C DB1D[08000000]          	fistp dword[noSirve]
+    44 00000062 DB05[06000000]          	fild dword[dos]
+    45 00000068 A0[00000000]            	mov al,[res]
+    46 0000006D A2[0E000000]            	mov [arreglo],al
+    47 00000072 DB05[0E000000]          	fild dword[arreglo]
+    48 00000078 DB05[06000000]          	fild dword[dos]
+    49 0000007E D8C1                    	fadd st0,st1
+    50 00000080 DB1D[00000000]          	fistp dword[res]
+    51 00000086 DB1D[08000000]          	fistp dword[noSirve]
+    52                                  	
+    53                                  	
+    54 0000008C B804000000              	mov eax,4
+    55 00000091 BB01000000              	mov ebx,1
+    56 00000096 B9[00000000]            	mov ecx,res
+    57 0000009B BA02000000              	mov edx,2
+    58 000000A0 CD80                    	int 0x80
+    59                                  	
+    60                                  	salir:
+    61 000000A2 B801000000              		mov eax,1
+    62 000000A7 CD80                    		int 0x80
+    63                                  

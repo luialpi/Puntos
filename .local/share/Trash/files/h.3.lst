@@ -1,0 +1,285 @@
+     1                                  Section .data
+     2                                  ;42=punto
+     3                                  ;45=linea horizontal
+     4                                  ;32=espacio
+     5                                  ;124=linea vertical
+     6 00000000 2E202E202E202E202E-     	arreglo2 db 46,32,46,32,46,32,46,32,46,32,46,10,
+     7 00000009 202E0A             
+     8 0000000C 202020202020202020-     			db 32,32,32,32,32,32,32,32,32,32,32,10,
+     9 00000015 20200A             
+    10 00000018 2E202E202E202E202E-     			db 46,32,46,32,46,32,46,32,46,32,46,10,
+    11 00000021 202E0A             
+    12 00000024 202020202020202020-     			db 32,32,32,32,32,32,32,32,32,32,32,10,
+    13 0000002D 20200A             
+    14 00000030 2E202E202E202E202E-     			db 46,32,46,32,46,32,46,32,46,32,46,10,
+    15 00000039 202E0A             
+    16 0000003C 202020202020202020-     			db 32,32,32,32,32,32,32,32,32,32,32,10,
+    17 00000045 20200A             
+    18 00000048 2E202E202E202E202E-     			db 46,32,46,32,46,32,46,32,46,32,46,10,
+    19 00000051 202E0A             
+    20 00000054 202020202020202020-     			db 32,32,32,32,32,32,32,32,32,32,32,10,
+    21 0000005D 20200A             
+    22 00000060 2E202E202E202E202E-     			db 46,32,46,32,46,32,46,32,46,32,46,10,
+    23 00000069 202E0A             
+    24 0000006C 202020202020202020-     			db 32,32,32,32,32,32,32,32,32,32,32,10,
+    25 00000075 20200A             
+    26 00000078 2E202E202E202E202E-     			db 46,32,46,32,46,32,46,32,46,32,46,10,10;
+    27 00000081 202E0A0A           
+    28                                  			
+    29                                  	
+    30                                  	len2: equ $-arreglo2
+    31                                  	
+    32 00000085 2D000000                	cuarentacinco dd 45
+    33 00000089 7C000000                	cienveinticuatro dd 124
+    34 0000008D 2E000000                	cuarentaseis dd 46
+    35 00000091 0C000000                	doce dd 12
+    36 00000095 0B000000                	once dd 11
+    37 00000099 4C000000                	letra dd 76
+    38 0000009D 20000000                	treintaydos dd 32
+    39                                  
+    40                                  	
+    41 000000A1 646967697465207375-     	msj1 db "digite su x: "
+    42 000000AA 20783A20           
+    43                                  	msjlen1 equ $-msj1
+    44                                  	
+    45 000000AE 646967697465207375-     	msj2 db "digite su y: "
+    46 000000B7 20793A20           
+    47                                  	msjlen2 equ $-msj2
+    48                                  	
+    49 000000BB 456E20657365206573-     	Error1 db "En ese espacio ya hay una raya. ",10
+    50 000000C4 706163696F20796120-
+    51 000000CD 68617920756E612072-
+    52 000000D6 6179612E200A       
+    53                                  	Error1len equ $-Error1
+    54                                  	
+    55 000000DC 456E20657365206573-     	Error2 db "En ese espacio no se puede dibujar una raya. ",10
+    56 000000E5 706163696F206E6F20-
+    57 000000EE 736520707565646520-
+    58 000000F7 646962756A61722075-
+    59 00000100 6E6120726179612E20-
+    60 00000109 0A                 
+    61                                  	Error2len equ $-Error2
+    62                                  
+    63                                  Section .bss
+    64                                  	
+    65 00000000 <res 00000001>          	res resb 1
+    66 00000001 <res 00000008>          	punto resd 2
+    67 00000009 <res 00000004>          	x resb 4
+    68 0000000D <res 00000004>          	y resb 4
+    69                                  	xlen equ 4
+    70                                  	ylen equ 4
+    71                                  
+    72                                  	
+    73                                  
+    74                                  Section .text
+    75                                  	global _start
+    76                                  	
+    77                                  	_start:
+    78                                  
+    79                                  			
+    80 00000000 BF00000000              	mov edi,0
+    81                                  		
+    82                                  	Imprime_matriz2:
+    83                                  		
+    84 00000005 8A87[00000000]          		mov al,[arreglo2+edi]
+    85 0000000B A2[00000000]            		mov [res],al
+    86 00000010 BA01000000              		mov edx,1
+    87 00000015 B9[00000000]            		mov ecx,res
+    88                                  		
+    89 0000001A BB01000000              		mov ebx,1
+    90 0000001F B804000000              		mov eax,4
+    91 00000024 CD80                    		int 0x80
+    92                                  		
+    93 00000026 47                      		inc edi
+    94 00000027 81FF85000000            		cmp edi,len2
+    95 0000002D 75D6                    		jne Imprime_matriz2
+    96                                  		
+    97                                  
+    98                                  		
+    99                                  	solicita2_X:
+   100                                  	
+   101 0000002F B9[A1000000]            		mov ecx,msj1
+   102 00000034 BA0D000000              		mov edx,msjlen1
+   103 00000039 BB01000000              		mov ebx,1
+   104 0000003E B804000000              		mov eax,4
+   105 00000043 CD80                    		int 0x80
+   106                                  		
+   107 00000045 B9[09000000]            		mov ecx,x
+   108 0000004A BA04000000              		mov edx,xlen
+   109 0000004F BB00000000              		mov ebx,0
+   110 00000054 B803000000              		mov eax,3
+   111 00000059 CD80                    		int 0x80
+   112                                  		
+   113 0000005B A0[0A000000]            		mov al,[x+1]
+   114 00000060 3C0A                    		cmp al,10
+   115 00000062 7414                    		je Ingresa2_normalX
+   116 00000064 B00A                    		mov al,10
+   117 00000066 8A1D[0A000000]          		mov bl,[x+1]
+   118 0000006C 80EB30                  		sub bl,48
+   119 0000006F 00D8                    		add al,bl
+   120 00000071 A2[09000000]            		mov [x],al
+   121 00000076 EB0C                    		jmp solicita2_Y
+   122                                  		
+   123                                  	Ingresa2_normalX:
+   124 00000078 A0[09000000]            		mov al,[x]
+   125 0000007D 2C30                    		sub al,48
+   126 0000007F A2[09000000]            		mov [x],al
+   127                                  	
+   128                                  	solicita2_Y:
+   129 00000084 B9[AE000000]            		mov ecx,msj2
+   130 00000089 BA0D000000              		mov edx,msjlen2
+   131 0000008E BB01000000              		mov ebx,1
+   132 00000093 B804000000              		mov eax,4
+   133 00000098 CD80                    		int 0x80
+   134                                  	
+   135 0000009A B9[0D000000]            		mov ecx,y
+   136 0000009F BA04000000              		mov edx,ylen
+   137 000000A4 BB00000000              		mov ebx,0
+   138 000000A9 B803000000              		mov eax,3
+   139 000000AE CD80                    		int 0x80
+   140                                  		
+   141 000000B0 A0[0E000000]            		mov al,[y+1]
+   142 000000B5 3C0A                    		cmp al,10
+   143 000000B7 7414                    		je Ingresa2_normalY
+   144 000000B9 B00A                    		mov al,10
+   145 000000BB 8A1D[0E000000]          		mov bl,[y+1]
+   146 000000C1 80EB30                  		sub bl,48
+   147 000000C4 00D8                    		add al,bl
+   148 000000C6 A2[0D000000]            		mov [y],al
+   149 000000CB EB0C                    		jmp localiza_punto2
+   150                                  	
+   151                                  	Ingresa2_normalY:
+   152 000000CD A0[0D000000]            		mov al,[y]
+   153 000000D2 2C30                    		sub al,48
+   154 000000D4 A2[0D000000]            		mov [y],al
+   155                                  		
+   156                                  	localiza_punto2:
+   157                                  		;recibe un x,y
+   158 000000D9 A0[0D000000]            		mov al,[y]
+   159 000000DE 8A1D[91000000]          		mov bl,[doce]
+   160 000000E4 F6E3                    		mul bl
+   161 000000E6 0205[09000000]          		add al,[x]
+   162 000000EC A2[01000000]            		mov [punto],al
+   163                                  
+   164                                  		
+   165                                  	par_o_impar2:
+   166 000000F1 66A1[01000000]          		mov ax,[punto] 
+   167 000000F7 6683E001                		AND ax,1 
+   168 000000FB 7502                    		jnz linea_horizontal2
+   169 000000FD EB20                    		jmp linea_vertical2 
+   170                                  	
+   171                                  
+   172                                  	linea_horizontal2:
+   173 000000FF E8B5000000              		call verifica_punto2
+   174 00000104 B02D                    		mov al,45
+   175 00000106 8B35[01000000]          		mov esi,[punto]
+   176 0000010C 8886[00000000]          		mov [arreglo2+esi],al
+   177 00000112 8B35[95000000]          		mov esi,[once]
+   178 00000118 EB25                    		jmp verifica_letra2
+   179 0000011A E9E1FEFFFF              		jmp _start
+   180                                  	
+   181                                  	linea_vertical2:
+   182 0000011F E895000000              		call verifica_punto2
+   183 00000124 B07C                    		mov al,124
+   184 00000126 8B35[01000000]          		mov esi,[punto]
+   185 0000012C 8886[00000000]          		mov [arreglo2+esi],al
+   186 00000132 8B35[95000000]          		mov esi,[once]
+   187 00000138 EB05                    		jmp verifica_letra2
+   188 0000013A E9C1FEFFFF              		jmp _start
+   189                                  		
+   190                                  	
+   191                                  		
+   192                                  ;-----------------------------------------------------------------------	
+   193                                  	
+   194                                  	
+   195                                  	verifica_letra2:
+   196 0000013F 83FE78                  		cmp esi,120
+   197 00000142 0F87B8FEFFFF            		ja _start
+   198 00000148 0F84B2FEFFFF            		je _start
+   199                                  
+   200 0000014E 83C602                  		add esi,2
+   201                                  		
+   202 00000151 8A86[00000000]          		mov al,[arreglo2+esi]
+   203 00000157 8A1D[99000000]          		mov bl,[letra]
+   204                                  
+   205 0000015D 3C0A                    		cmp al,10
+   206 0000015F 74DE                    		je verifica_letra2
+   207                                  		
+   208 00000161 38D8                    		cmp al,bl
+   209 00000163 7407                    		je suma_doce
+   210                                  
+   211 00000165 E807000000              		call verifica_cuadro2
+   212 0000016A EBD3                    		jmp verifica_letra2
+   213                                  		
+   214                                  		
+   215                                  	suma_doce:
+   216 0000016C 83C60C                  		add esi,12
+   217 0000016F EBCE                    		jmp verifica_letra2
+   218                                  		
+   219                                  	verifica_cuadro2:
+   220                                  
+   221 00000171 89F7                    		mov edi,esi
+   222 00000173 83EF0C                  		sub edi,12
+   223 00000176 8A87[00000000]          		mov al,[arreglo2+edi]
+   224 0000017C 3C20                    		cmp al,32
+   225 0000017E 74BF                    		je verifica_letra2
+   226                                  
+   227 00000180 89F7                    		mov edi,esi
+   228 00000182 83C701                  		add edi,1
+   229 00000185 8A87[00000000]          		mov al,[arreglo2+edi]
+   230 0000018B 3C20                    		cmp al,32
+   231 0000018D 74B0                    		je verifica_letra2
+   232                                  
+   233 0000018F 89F7                    		mov edi,esi
+   234 00000191 83EF01                  		sub edi,1
+   235 00000194 8A87[00000000]          		mov al,[arreglo2+edi]
+   236 0000019A 3C20                    		cmp al,32
+   237 0000019C 74A1                    		je verifica_letra2
+   238                                  			
+   239 0000019E 89F7                    		mov edi,esi
+   240 000001A0 83C70C                  		add edi,12
+   241 000001A3 8A87[00000000]          		mov al,[arreglo2+edi]
+   242 000001A9 3C20                    		cmp al,32
+   243 000001AB 7492                    		je verifica_letra2
+   244                                  			
+   245 000001AD A0[99000000]            		mov al,[letra]
+   246 000001B2 8886[00000000]          		mov [arreglo2+esi],al
+   247                                  
+   248 000001B8 C3                      		ret
+   249                                  		
+   250                                  	verifica_punto2:
+   251                                  		
+   252 000001B9 8B35[01000000]          		mov esi,[punto]
+   253                                  		
+   254 000001BF 8A86[00000000]          		mov al,[arreglo2+esi]
+   255 000001C5 3A05[8D000000]          		cmp al,[cuarentaseis]
+   256 000001CB 7438                    		je imprime_error2
+   257                                  		
+   258 000001CD 8A86[00000000]          		mov al,[arreglo2+esi]
+   259 000001D3 3A05[89000000]          		cmp al,[cienveinticuatro]
+   260 000001D9 740F                    		je imprime_error1
+   261                                  		
+   262 000001DB 8A86[00000000]          		mov al,[arreglo2+esi]
+   263 000001E1 3A05[85000000]          		cmp al,[cuarentacinco]
+   264 000001E7 7401                    		je imprime_error1
+   265                                  		
+   266 000001E9 C3                      		ret
+   267                                  		
+   268                                  	imprime_error1:
+   269                                  	
+   270 000001EA B9[BB000000]            		mov ecx,Error1
+   271 000001EF BA21000000              		mov edx,Error1len
+   272 000001F4 BB01000000              		mov ebx,1
+   273 000001F9 B804000000              		mov eax,4
+   274 000001FE CD80                    		int 0x80	
+   275 00000200 E82AFEFFFF              		call solicita2_X
+   276                                  		
+   277                                  	imprime_error2:
+   278                                  	
+   279 00000205 B9[DC000000]            		mov ecx,Error2
+   280 0000020A BA2E000000              		mov edx,Error2len
+   281 0000020F BB01000000              		mov ebx,1
+   282 00000214 B804000000              		mov eax,4
+   283 00000219 CD80                    		int 0x80	
+   284 0000021B E80FFEFFFF              		call solicita2_X
+   285                                  

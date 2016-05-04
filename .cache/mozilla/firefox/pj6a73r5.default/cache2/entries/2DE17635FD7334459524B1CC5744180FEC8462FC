@@ -1,0 +1,238 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Arreglos</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <link rel="stylesheet" type="text/css" href="style2.css" />
+      <link rel="shortcut icon" href="images/favicon.ico" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="header">
+        <h1>Programación básica en lenguaje ensamblador</h1>
+        <div id="tagright">
+          <p id="tagline">Curso basado en Linux</p>
+          <p id="soon"></p>
+          <ul> 
+      		 <li>&nbsp;</li>
+       		 <li>&nbsp;</li>
+			
+          </ul>
+          <img src="Images/penguin.jpg" height="30" width="36" alt="" id="penguin" />
+        </div> <!-- header-bottom -->
+      </div> <!-- header -->
+      <div id="main">
+        <div id="main2">
+        
+        <!--right column -->
+          <div id="rightcol">
+          
+            <div class="inner">
+
+            <style type="text/css">
+@import url(http://www.google.com/cse/api/branding.css);
+</style>
+<div class="cse-branding-bottom" style="background-color:#FFFFFF;color:#000000">
+  <div class="cse-branding-form">
+    <form action="http://www.google.co.ve/cse" id="cse-search-box" target="_blank">
+      <div>
+        <input type="hidden" name="cx" value="partner-pub-1721272339585420:oxrxng-vpll" />
+        <input type="hidden" name="ie" value="ISO-8859-1" />
+        <input type="text" name="q" size="16" />
+        <input type="submit" name="sa" value="Buscar" />
+      </div>
+    </form>
+  </div>
+  <div class="cse-branding-logo">
+    <img src="http://www.google.com/images/poweredby_transparent/poweredby_FFFFFF.gif" alt="Google" />
+  </div>
+  <div class="cse-branding-text">
+    B&#250;squeda personalizada
+  </div>
+</div>
+           </div>
+          
+          
+ 		  
+ 		  <div class="inner3">
+            <h3>Anuncios Google</h3>
+             <div class="anunciosG">
+<script type="text/javascript"><!--
+google_ad_client = "pub-1721272339585420";
+/* Anuncios2 */
+google_ad_slot = "1926824833";
+google_ad_width = 160;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+		  </div>
+          </div>
+          
+        </div> <!-- right column -->
+        
+        <!-- left column -->
+        <div id="leftcol">
+          <div class="inner">
+             <img src="Images/Gnome.png" height="48" width="48" alt="" id="gnome" />
+            <ul class="nav">
+              <li><a href="index.html">Página principal</a></li>
+              <li><a href="IA32esp.html">La plataforma IA-32</a></li>
+              <li><a href="entorno.html">Entorno de programación</a></li>
+              <li><a href="programa.html">El programa</a></li>
+              <li><a href="datos.html">Definición de datos</a></li>
+              <li><a href="instruccion.html">Instrucciones</a></li>
+              <li><a href="es.html">Entrada/Salida</a></li>
+              <li><a href="controles.html">Control de flujo</a></li>
+              <li><a href="arreglo.html">Arreglos</a></li>
+              	<li class="intern"><a href="lect.html">lectura</a></li>
+                <li class="intern"><a href="escrit.html">escritura</a></li>
+                <li class="intern"><a href="ejemp4.html">ejemplos</a></li>
+              <li><a href="procedim.html">Procedimientos</a></li>
+            </ul>
+            
+            <h3>Herramientas</h3>
+             <ul class="nav">
+              <li><a href="binutilesp.html">Binutils</a></li>
+              <li><a href="gdbesp.html">gdb</a></li>
+              </ul>
+              
+            <h3>Tips de Linux y gcc</h3>
+             <ul class="nav">
+				<li><a href="linux.html">Comandos de Linux</a></li>
+				<li><a href="backg.html">Proceso en background</a></li>
+				<li><a href="gcc.html">Uso de gcc</a></li>
+			</ul>
+          
+           <h3>Ayuda</h3>
+           <ul class="nav">
+              <li><a href="faqe.html">Preguntas frecuentes</a></li>
+              <li>&nbsp;</li>
+              </ul>
+           
+          </div>
+        </div> <!-- left column -->
+        
+        <div id="content">	<!-- main content -->
+          <div class="contenttitle">
+            <h2>Arreglos</h2>
+          </div>
+          <div class="inner">
+            <h2>Tipo de dato</h2>
+            <p>En lenguaje ensamblador se utiliza el tipo de direccionamiento escalado para acceder a las posiciones de un arreglo. Hay que tomar en cuenta la dirección inicial del arreglo y utilizar un índice para ir recorriendo cada uno de sus elementos. El tamaño de los datos representa el desplazamiento entre dos posiciones del arreglo.</p>
+          
+ 			<h2>Declaración de arreglos</h2>
+ 			<p>Los arreglos se declaran como una variable con varios valores, por ejemplo si se declara el arreglo <strong>a</strong> como:</p>
+ 			 <div class="base">
+              <table class="assem">
+				<tr>
+					<td colspan="2">.section .data </td>
+					<td> </td>
+				</tr>
+ 				<tr>
+					<td>a: </td>
+					<td>.long 25,48,32,87</td>
+					<td> </td>
+				</tr>
+			</table>
+			</div>
+ 			<p>Los elementos del arreglo se guardan en memoria en posiciones consecutivas y el identificador <strong>a</strong> apunta a la primera posición del arreglo, es decir la posición cuyo índice es cero. Cada elemento del arreglo tiene el tamaño del tipo de dato asociado, en este caso cada elemento ocupa 4 bytes debido a que el arreglo está declarado como tipo <i>long</i> y el tamaño total del arreglo es de 16 bytes.</p>
+ 			<table class="general">
+              	<tr>
+              		<th>Dirección</th>
+              		<th>Contenido</th>
+              	</tr>
+              	<tr>
+              		<td>a</td>
+              		<td>25</td>
+              	</tr>
+              	<tr>
+              		<td>a+4</td>
+              		<td>48</td>
+              	</tr>
+              	<tr>
+              		<td>a+8</td>
+              		<td>32</td>
+              	</tr>
+              	<tr>
+              		<td>a+12</td>
+              		<td>87</td>
+              	</tr>
+             </table>
+ 			<p>En este otro ejemplo:</p>
+ 			 <div class="base">
+              <table class="assem">
+				<tr>
+					<td colspan="2">.section .data </td>
+					<td> </td>
+				</tr>
+ 				<tr>
+					<td>arr: </td>
+					<td>.byte 5,4,3,7</td>
+					<td> </td>
+				</tr>
+			</table>
+			</div>
+ 			<p>Cada elemento del arreglo ocupa 1 byte. El tamaño total de este arreglo es de 4 bytes.</p>
+ 			<table class="general">
+              	<tr>
+              		<th>Dirección</th>
+              		<th>Contenido</th>
+              	</tr>
+              	<tr>
+              		<td>arr</td>
+              		<td>5</td>
+              	</tr>
+              	<tr>
+              		<td>arr+1</td>
+              		<td>4</td>
+              	</tr>
+              	<tr>
+              		<td>arr+2</td>
+              		<td>3</td>
+              	</tr>
+              	<tr>
+              		<td>arr+3</td>
+              		<td>7</td>
+              	</tr>
+             </table>
+ 			<p>Cuando se definen las variables el sistema las guarda en forma consecutiva en memoria. Por ejemplo si se definen variables de 16 bits y luego se leen usando instrucciones de 32 bits el sistema no produce un mensaje de error y accede los bytes consecutivos leyendo datos no válidos.</p>
+ 			
+ 			
+ 			
+        </div>
+        </div> <!-- main content -->
+         <div id="next">
+          		<p><a href="lect.html">Lectura de datos<img src="Images/next.png" width="24" height="24" alt="right arrow" id="arrowr" /></a></p>
+          </div>
+        
+        <div id="clearone">&nbsp;</div>
+        
+      </div> <!-- main2 -->
+    </div> <!-- main -->
+    
+    <div id="footer">
+        <ul id="foot">
+        	<li>Sitio web diseñado por Amelia Ferreira &copy; 2008</li>
+        	<li><strong>|</strong> </li>
+        	<li><a href="mailto:admin@learnassembler.com">Contactar al administrador</a></li>
+        	<li><strong>|</strong></li>
+        	<li>Iconos de <a href="http://dryicons.com/">dryicons.com</a></li>
+        </ul>
+      </div> <!-- footer -->
+    </div> <!-- wrapper -->
+  </body>
+</html>dØÅòo$      Wd†WdŠ<__÷Wr•   ':http://learnassembler.com/arreglo.html necko:classified 1 request-method GET response-head HTTP/1.1 200 OK
+Date: Thu, 21 Apr 2016 23:38:47 GMT
+Content-Type: text/html
+Content-Length: 8198
+Server: Apache/2
+Last-Modified: Mon, 08 Oct 2012 18:30:11 GMT
+Etag: "2006-4cb90696a4fd7"
+Cache-Control: max-age=3600
+Expires: Fri, 22 Apr 2016 00:38:47 GMT
+Accept-Ranges: bytes
+Age: 0
+ charset windows-1252 uncompressed-len 0    

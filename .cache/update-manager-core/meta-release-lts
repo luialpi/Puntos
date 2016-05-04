@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Ingreso a Red Libre</title>
+  <style type="text/css">
+  body {
+   padding-top: 0 !important;
+   padding-bottom: 0 !important;
+   padding-top: 0 !important;
+   padding-bottom: 0 !important;
+   margin:0 !important;
+   width: 100% !important;
+   -webkit-text-size-adjust: 100% !important;
+   -ms-text-size-adjust: 100% !important;
+   -webkit-font-smoothing: antialiased !important;
+ }
+ .tableContent img {
+   border: 0 !important;
+   display: block !important;
+   outline: none !important;
+ }
+ a{
+  color:#382F2E;
+}
+
+h1{
+  color:#382F2E;
+  margin:0;
+  font-size: 28px;
+}
+h3{
+  color:#382F2E;
+  margin:0;
+  font-size: 24px;
+}
+p{
+  color:#382F2E;
+  margin:0;
+  font-size: 18px;
+}
+
+
+div,p,ul,h1{
+  margin:0;
+}
+
+
+</style>
+<link rel="stylesheet" type="text/css" href="captiveportal-default.css" />
+		<link rel="stylesheet" type="text/css" href="captiveportal-component.css" />
+		<script src="captiveportal-modernizr.custom.js"></script>
+</head>
+<body paddingwidth="0" paddingheight="0" bgcolor="#FFFFFF"  style="padding-top: 0; padding-bottom: 0; padding-top: 0; padding-bottom: 0; background-repeat: repeat; width: 100% !important; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; -webkit-font-smoothing: antialiased;" offset="0" toppadding="0" leftpadding="0">
+  <table width="100%" border="0" cellspacing="0" cellpadding="0" class="tableContent" align="center" bgcolor="#F6F6F6" style='font-family:Helvetica, Arial,serif;'>
+
+    <!-- =============================== Header ====================================== -->
+    <tr><td height='10' bgcolor='#ffffff' colspan='3'></td></tr>
+
+    <tr>
+      <td valign='top' bgcolor='#ffffff' colspan='3'>
+         <img src="captiveportal-logo2.png" alt='Compagnie logo' data-default="placeholder" data-max-width="300"  />
+      </td>
+    </tr>
+
+    <tr>
+      <td  bgcolor='#2C94E0'>
+        <table  border="0" cellspacing="0" cellpadding="0" align="center" valign='top'>
+
+          <tr><td height='15' ></td><td></td><td></td></tr>
+
+          <tr >
+            <td  valign="middle">
+              <div class="container demo-3">
+			<ul class="grid cs-style-5">
+				<li>
+					<figure>
+						
+						<figcaption>
+							<h1>BIENVENIDO A LA RED:</h1>
+                                                        <h3>SIUA_WIFI_LIBRE</h3>
+						</figcaption>
+                                                <div><img src="captiveportal-fig_conare.png" alt='Sede Interuniversitaria de Alajuela'  /></div>
+					</figure>
+				</li>
+				
+			</ul>
+		</div>
+            </td>
+            <td width='800' valign='top'  >
+               <p align="justify" style="color: #FCFCFC;" >Usted está por entrar a una red inalámbrica de libre acceso pero de uso restringido para fines académicos.</p>
+                          <br />
+                          <p align="justify" style="color: #FCFCFC;">Cualquier uso para fines diferentes queda expresamente desautorizado. La Administración de la red se
+                          reserva el derecho de interrumpir las conexiones de usuarios que no se ajusten a las condiciones de uso.</p>
+                          <br />
+                          <p align="justify" style="color: #FCFCFC;">Como medida de seguridad, todas las conexiones que realice serán registradas y guardadas durante un
+                          tiempo prudencial en nuestros servidores. En caso de producirse algún problema legal con el uso de esta
+                          red nos reservamos el derecho de entregar los registros de las conexiones realizadas a las autoridades
+                          competentes.</p>
+                          <br />
+                          <p align="justify" style="color: #FCFCFC;">Tras 4 horas de inactividad su conexión será terminada automáticamente.
+                          Puede, no obstante, volver a conectarse después si lo desea.</p>
+                          <br />
+                          <p align="center" style="color: #FCFCFC;">Por favor por el bien de todos/as, haga un buen uso de este servicio.</p>
+                          <br />
+                          <p align="center" style="color: #FCFCFC;">¡Gracias!</p>
+            </td>
+            <td width="20"></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <table width="600" border="0" cellspacing="0" cellpadding="0" align="center" valign='top'>
+          <tr>
+            <td class='movableContentContainer' bgcolor='#F6F6F6' >
+
+              <div class='movableContent'>
+                <table width="600" border="0" cellspacing="0" cellpadding="0" align="center" valign='top'>
+                  <tr><td height='5'></td></tr>
+                  <tr>
+                    <td>
+                       <form method="post" action="http://20.0.0.1:8002/">
+                          <p align="center">
+                          <input name="redirurl" type="hidden" value="http://buscador.siua.ac.cr"/>
+                          <input name="accept" type="submit" value="Acepto las condiciones del servicio" class='link2' style='padding:8px;background:#00AAFF;font-size:13px;color:#ffffff;text-decoration:none;font-weight:bold;'/>
+                          </p>
+                       </form>
+                    
+                    </td>
+                  </tr>
+             </table>
+            </div>
+
+            <br />
+
+            <div class='movableContent'>
+              <table width="600" border="0" cellspacing="0" cellpadding="0" align="center" valign='top'>
+                <tr>
+                 <td width='540' align="center">
+                    <p style='font-size:13px;color:#99A1A6;line-height:19px;'>Unidad de Gestión e Innovación Tecnológica</p>
+                    <img src="captiveportal-ugit.png" alt='Unidad de Gestión e Innovación Tecnológica'  />
+                 </td>
+                </tr>
+              </table>
+            </div>
+        </td>
+       </tr>
+    </table>
+  </td>
+</tr>
+
+
+
+
+</table>
+
+
+
+  </body>
+  </html>

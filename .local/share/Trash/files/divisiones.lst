@@ -1,0 +1,36 @@
+     1                                  
+     2                                  	
+     3                                  Section .data
+     4 00000000 3031323334              	arreglo db 48,49,50,51,52;
+     5                                  	len: equ $-arreglo
+     6                                  
+     7 00000005 2E0A                    	msg2: db ".",10
+     8                                  	len2: equ $-msg2
+     9                                  
+    10                                  Section .bss
+    11 00000000 <res 00000002>          array resb 2
+    12                                  
+    13                                  Section .text
+    14                                  	global _start
+    15                                  	
+    16                                  	_start:
+    17                                  	
+    18 00000000 BF00000000              	mov edi,0
+    19                                  	cliclo:
+    20 00000005 8A87[00000000]          		mov al,[arreglo+edi]
+    21 0000000B A2[00000000]            		mov [array],al
+    22 00000010 B9[00000000]            		mov ecx,array
+    23 00000015 BA02000000              		mov edx,2
+    24 0000001A B804000000              		mov eax,4
+    25 0000001F BB01000000              		mov ebx,1
+    26 00000024 CD80                    		int 0x80
+    27 00000026 47                      		inc edi
+    28                                  		
+    29                                  
+    30                                  fin:
+    31 00000027 B804000000              	mov eax,4
+    32 0000002C 31DB                    	xor ebx,ebx
+    33 0000002E CD80                    	int 80h
+    34                                  
+    35                                  	
+    36                                  
