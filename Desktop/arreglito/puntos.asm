@@ -57,6 +57,9 @@ Section .data
 	doce dd 12
 	once dd 11
 	
+	contador dd 0,10
+	lenContador equ $-contador
+	
 	
 	treintaYdos dd 32
 	dieciseis dd 16
@@ -116,6 +119,8 @@ Section .bss
 	lenNombre3 equ 20
 	lenNombre4 equ 20
 	
+	contadorDeCuadros resb 4
+	
 Section .text
 	global _start
 	
@@ -155,11 +160,14 @@ Section .text
 			int 0x80;imprimimos el msj de solicitud
 			jmp juego
 
+
 ;=======================================================================
 ;+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ;=======================================================================
 	
 	pequenio:
+		mov al,1
+		mov [contadorDeCuadros],al
 		
 		mov ecx,nombre
 		mov edx,lenNombre
@@ -190,6 +198,11 @@ Section .text
 		mov [turno],bl
 		
 		controla_turno:
+		
+			mov al,[contadorDeCuadros]
+			cmp al,9
+			je Salir
+			
 			mov al,[turno]
 			cmp al,2
 			ja reset_turno
@@ -206,12 +219,12 @@ Section .text
 			jmp controla_turno
 
 		cambio_jugador1:
-			mov al,76;[nombre1-(lenNombre1+1)]
+			mov al,[nombre1]
 			mov [letra],al
 			jmp pequenio_aux
 			
 		cambio_jugador2:
-			mov al,75;[nombre2-(lenNombre2+1)]
+			mov al,[nombre2]
 			mov [letra],al
 			jmp pequenio_aux
 			
@@ -370,6 +383,10 @@ Section .text
 				mov al,[letra]
 				mov [arreglo+esi],al
 				
+				mov bl,[contadorDeCuadros]
+				add bl,1
+				mov [contadorDeCuadros],bl
+				
 				ret
 						
 			verifica_punto:
@@ -475,17 +492,17 @@ Section .text
 			jmp controla_turno2
 
 		cambio2_jugador1:
-			mov al,76;[nombre1-(lenNombre1+1)]
+			mov al,[nombre1]
 			mov [letra],al
 			jmp mediano_aux
 			
 		cambio2_jugador2:
-			mov al,75;[nombre2-(lenNombre2+1)]
+			mov al,[nombre2]
 			mov [letra],al
 			jmp mediano_aux
 			
 		cambio2_jugador3:
-			mov al,77;[nombre2-(lenNombre2+1)]
+			mov al,[nombre3]
 			mov [letra],al
 			jmp mediano_aux
 		
@@ -789,22 +806,22 @@ Section .text
 			jmp controla_turno3
 
 		cambio3_jugador1:
-			mov al,76;[nombre1-(lenNombre1+1)]
+			mov al,[nombre1]
 			mov [letra],al
 			jmp grande_aux
 			
 		cambio3_jugador2:
-			mov al,75;[nombre2-(lenNombre2+1)]
+			mov al,[nombre2]
 			mov [letra],al
 			jmp grande_aux
 			
 		cambio3_jugador3:
-			mov al,77;[nombre2-(lenNombre2+1)]
+			mov al,[nombre3]
 			mov [letra],al
 			jmp grande_aux	
 			
 		cambio3_jugador4:
-			mov al,78;[nombre2-(lenNombre2+1)]
+			mov al,[nombre4]
 			mov [letra],al
 			jmp grande_aux
 				
@@ -1027,7 +1044,10 @@ Section .text
 				int 0x80	
 				call solicita3_X
 				
-		
+	Salir:
+		mov ebx,0
+		mov eax,1
+		int 0x80
 		
 		
 
